@@ -20,7 +20,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
         match.setId(Long.parseLong(input.getId()));
         match.setCity(input.getCity());
-        match.setDate(LocalDate.parse(input.getDate(), DateTimeFormatter.ofPattern("yyyy-mm-dd")));
+        match.setDate(LocalDate.parse(input.getDate()));
         match.setPlayerOfMatch(input.getPlayer_of_match());
         match.setVenue(input.getVenue());
 
